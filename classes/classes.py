@@ -33,7 +33,7 @@ class Chromatogram:
 
     # Return an unambiguous string representation of the object
     def __repr__(self) -> str:
-        return f"Chromatogram('{self.name}')"
+        return f"Chromatogram('file={self.name}')"
 
     ######################## CLASS METHODS ####################################
     @classmethod  # This is a decorator
