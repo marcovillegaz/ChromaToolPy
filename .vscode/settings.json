@@ -2,6 +2,7 @@
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
+    "python.envFile": "${workspaceFolder}/.env",
     "python.formatting.provider": "none",
     "editor.rulers": [
         80
