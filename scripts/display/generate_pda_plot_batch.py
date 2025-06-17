@@ -5,7 +5,7 @@ It processes all PDA files in a given folder.
 
 import os
 from src.classes.chromatogram import Chromatogram
-from src.chroma_display import chroma_plot
+from src.display import chroma_plot
 
 # Input and output folders
 folder_path = r"C:\Users\marco\OneDrive - usach.cl\GWR Analysis\2_Analysis\Thais_Vargas\Raw\batch1_pda\PDA"
