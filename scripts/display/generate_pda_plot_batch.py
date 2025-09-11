@@ -2,20 +2,24 @@
 This script creates surface plots from PDA data for J. Vidal.
 It processes all PDA files in a given folder.
 """
-
-from src.classes.chromatogram import Chromatogram
-from src.display import chroma_plot
 import os
 
+from chroma_tool_py.classes import Chromatogram
+from chroma_tool_py.display import chroma_plot
+
+
 # Input and output folders
-RAW_PDA_FOLDER_PATH = r"C:\Users\marco\OneDrive - usach.cl\GWR Analysis\2_Analysis\Thais_Vargas\Raw\batch1_03_pda\PDA"
-RAW_FL_FOLDER_PATH = r"C:\Users\marco\OneDrive - usach.cl\GWR Analysis\2_Analysis\Thais_Vargas\Raw\batch1_03_pda\FL"
-PDA_OUTPUT_FOLDER = r"C:\Users\marco\OneDrive - usach.cl\GWR Analysis\2_Analysis\Thais_Vargas\Imagenes\batch1_03\PDA"
-FL_OUTPUT_FOLDER = r"C:\Users\marco\OneDrive - usach.cl\GWR Analysis\2_Analysis\Thais_Vargas\Imagenes\batch1_03\FL"
+RAW_PDA_FOLDER_PATH = r"/home/marco/Documentos/GWR Project/raw/batch4_01/PDA"
+RAW_FL_FOLDER_PATH = r"/home/marco/Documentos/GWR Project/raw/batch4_01/FL"
+PDA_OUTPUT_FOLDER = r"/home/marco/Documentos/GWR Project/images/batch4_01/PDA"
+FL_OUTPUT_FOLDER = r"/home/marco/Documentos/GWR Project/images/batch4_01/FL"
 
 # Ensure output directory exists
 if not os.path.exists(PDA_OUTPUT_FOLDER):
     os.makedirs(PDA_OUTPUT_FOLDER)
+
+if not os.path.exists(FL_OUTPUT_FOLDER):
+    os.makedirs(FL_OUTPUT_FOLDER)
 
 # Loop through all .txt files in the input folder
 total_files = len(os.listdir(RAW_PDA_FOLDER_PATH))

@@ -6,5 +6,9 @@
     "python.formatting.provider": "none",
     "editor.rulers": [
         80
+    ],
+    "python-envs.pythonProjects": [],
+    "python.analysis.extraPaths": [
+        "./src"
     ]
 }
